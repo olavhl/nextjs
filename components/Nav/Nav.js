@@ -1,10 +1,11 @@
 import React from "react";
+import Link from 'next/link';
 
 export const Nav = () => {
     return (
         <nav className="navbar navbar-light bg-light">
             <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
+                <Link href={"/"} className="navbar-brand">Navbar</Link>
             </div>
         </nav>
     )
