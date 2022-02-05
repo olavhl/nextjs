@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from "react";
-import {Nav} from "../../components/Nav/Nav";
 import {Card} from "../../components/Card/Card";
 import DefaultLayout from "../../layouts/Default";
 

@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import {useRouter} from "next/router";
-import {Nav} from "../../components/Nav/Nav";
 import DefaultLayout from "../../layouts/Default";
 
 export default function Cat() {
