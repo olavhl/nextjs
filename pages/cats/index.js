@@ -1,6 +1,7 @@
 import React, {useEffect, useState} from "react";
 import {Nav} from "../../components/Nav/Nav";
 import {Card} from "../../components/Card/Card";
+import DefaultLayout from "../../layouts/Default";
 
 export default function Index() {
     const [cats, setCats] = useState([])
@@ -16,8 +17,7 @@ export default function Index() {
         fetchCats().then(() => console.log("Cats fetched"))
     }, [])
 
-    return <>
-        <Nav />
+    return <DefaultLayout>
         <div className={'container mt-5'}>
             <div style={{display: 'flex', flexWrap: 'wrap'}}>
 
@@ -25,6 +25,6 @@ export default function Index() {
             </div>
         </div>
 
-    </>
+    </DefaultLayout>
 
 }
